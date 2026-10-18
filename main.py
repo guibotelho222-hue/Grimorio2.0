@@ -159,28 +159,28 @@ def main(page: ft.Page):
     nav_bar = ft.NavigationBar(
         destinations=[
             ft.NavigationBarDestination(
-                icon=ft.Icons.FORT_OUTLINED,
-                selected_icon=ft.Icons.FORT,
+                icon=ft.icons.FORT_OUTLINED,
+                selected_icon=ft.icons.FORT,
                 label=nomes_abas_iniciais.get("trono", "Trono")
             ),
             ft.NavigationBarDestination(
-                icon=ft.Icons.AUTO_AWESOME_OUTLINED,
-                selected_icon=ft.Icons.AUTO_AWESOME,
+                icon=ft.icons.AUTO_AWESOME_OUTLINED,
+                selected_icon=ft.icons.AUTO_AWESOME,
                 label=nomes_abas_iniciais.get("quests", "Quests")
             ),
             ft.NavigationBarDestination(
-                icon=ft.Icons.SAVINGS_OUTLINED,
-                selected_icon=ft.Icons.SAVINGS,
+                icon=ft.icons.SAVINGS_OUTLINED,
+                selected_icon=ft.icons.SAVINGS,
                 label=nomes_abas_iniciais.get("cofre", "Cofre")
             ),
             ft.NavigationBarDestination(
-                icon=ft.Icons.BUILD_OUTLINED,
-                selected_icon=ft.Icons.BUILD,
+                icon=ft.icons.BUILD_OUTLINED,
+                selected_icon=ft.icons.BUILD,
                 label=nomes_abas_iniciais.get("forja", "Forja")
             ),
             ft.NavigationBarDestination(
-                icon=ft.Icons.SCIENCE_OUTLINED,
-                selected_icon=ft.Icons.SCIENCE,
+                icon=ft.icons.SCIENCE_OUTLINED,
+                selected_icon=ft.icons.SCIENCE,
                 label=nomes_abas_iniciais.get("foco", "Foco")
             ),
         ],
