@@ -31,13 +31,13 @@ CORES_CATEGORIAS = {
 }
 
 ICONES_CATEGORIAS = {
-    "Alimentação": ft.Icons.RESTAURANT,
-    "Moradia": ft.Icons.HOME,
-    "Lazer": ft.Icons.ATTRACTIONS,
-    "Saúde": ft.Icons.FAVORITE,
-    "Investimentos": ft.Icons.TRENDING_UP,
-    "Essenciais": ft.Icons.LOCAL_GROCERY_STORE,
-    "Tributos": ft.Icons.ACCOUNT_BALANCE,
+    "Alimentação": ft.icons.RESTAURANT,
+    "Moradia": ft.icons.HOME,
+    "Lazer": ft.icons.ATTRACTIONS,
+    "Saúde": ft.icons.FAVORITE,
+    "Investimentos": ft.icons.TRENDING_UP,
+    "Essenciais": ft.icons.LOCAL_GROCERY_STORE,
+    "Tributos": ft.icons.ACCOUNT_BALANCE,
     "Reino & Armas": ft.Icons.SHIELD,
     "Poupança": ft.Icons.SAVINGS,
     "Outros": ft.Icons.CATEGORY
@@ -112,7 +112,7 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
         dialogo_reserva = ft.AlertDialog(
             title=ft.Row(
                 controls=[
-                    icon_nobre(ft.Icons.SHIELD_MOON, color=cores["light"], size=20),
+                    icon_nobre(ft.icons.SHIELD_MOON, color=cores["light"], size=20),
                     ft.Text("Ajustar Reserva", size=15, weight=ft.FontWeight.BOLD, color=cores["light"])
                 ],
                 spacing=8
@@ -208,7 +208,7 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
                 ft.Container(
                     content=ft.Row(
                         controls=[
-                            icon_nobre(ft.Icons.WARNING_AMBER_ROUNDED, color=DANGER_RED, size=20),
+                            icon_nobre(ft.icons.WARNING_AMBER_ROUNDED, color=DANGER_RED, size=20),
                             ft.Column(
                                 controls=[
                                     ft.Text("Alerta Real: Dívida da Coroa!", weight=ft.FontWeight.BOLD, color=DANGER_RED, size=12),
@@ -240,7 +240,7 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
                         controls=[
                             ft.Row(
                                 controls=[
-                                    icon_nobre(ft.Icons.ARROW_UPWARD, size=13, color=SUCCESS_GREEN),
+                                    icon_nobre(ft.icons.ARROW_UPWARD, size=13, color=SUCCESS_GREEN),
                                     ft.Text("Entradas", size=10, color=cores.get("text_muted", TEXT_MUTED))
                                 ],
                                 spacing=2
@@ -260,7 +260,7 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
                         controls=[
                             ft.Row(
                                 controls=[
-                                    icon_nobre(ft.Icons.ARROW_DOWNWARD, size=13, color=DANGER_RED),
+                                    icon_nobre(ft.icons.ARROW_DOWNWARD, size=13, color=DANGER_RED),
                                     ft.Text("Saídas", size=10, color=cores.get("text_muted", TEXT_MUTED))
                                 ],
                                 spacing=2
@@ -296,7 +296,8 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
                                     controls=[
                                         ft.Row(
                                             controls=[
-                                                icon_nobre(ft.Icons.SHIELD_MOON, size=13, color=cores["light"]),
+                                                icon_nobre(ft.i
+                                                           cons.SHIELD_MOON, size=13, color=cores["light"]),
                                                 ft.Text("Reserva", size=10, color=cores.get("text_muted", TEXT_MUTED))
                                             ],
                                             spacing=2
@@ -354,7 +355,7 @@ def criar_aba_cofre(page: ft.Page, on_update_callback=None) -> ft.Control:
                         controls=[
                             ft.Row(
                                 controls=[
-                                    icon_nobre(ft.Icons.SPEED, size=15, color=cores["light"]),
+                                    icon_nobre(ft.icons.SPEED, size=15, color=cores["light"]),
                                     ft.Text("Teto Mensal", size=11, weight=ft.FontWeight.BOLD, color=cores["light"]),
                                     ft.IconButton(
                                         icon=ft.Icons.EDIT,
